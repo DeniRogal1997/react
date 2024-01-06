@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+.App {
+    width: 800px;
+}
+
+.post {
+    display: flex;
+    padding: 15px;
+    border: 2px solid teal;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.App h1 {
+    text-align: center;
+    font-family: Arial;
+    padding: 20px;
+    margin: 20px;
+}
+
+.post-enter {
+    opacity: 0;
+  }
+
+.post-enter-active {
+    opacity: 1;
+    transition: all 500ms ease-in;
+  }
+
+.post-exit {
+    opacity: 1;
+  }
+
+.post-exit-active {
+
+    transform: translateX(-750px);
+    transition: all 350ms ease-in;
+  }
+  
